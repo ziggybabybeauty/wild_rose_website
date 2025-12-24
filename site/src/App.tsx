@@ -1,5 +1,4 @@
 import Hero from './components/Hero';
-import UniqueAssets from './components/UniqueAssets';
 import Methodology from './components/Methodology';
 import Team from './components/Team';
 import Contact from './components/Contact';
@@ -9,7 +8,6 @@ function App() {
   return (
     <main>
       <Hero />
-      <UniqueAssets />
       <Methodology />
       <Team />
       <Contact />
