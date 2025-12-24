@@ -10,10 +10,10 @@
   --color-white: #FFFFFF;
   --color-text-dark: #1A1A1A;
 
-  /* Wild Rose Pink Accent */
-  --color-rose-pink: #E75480;
-  --color-rose-light: #F990B0;
-  --color-rose-dark: #C73866;
+  /* Gold Accent */
+  --color-gold: #B8945F;
+  --color-gold-light: #D4A853;
+  --color-gold-dark: #8B7355;
 
   /* Typography */
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -107,8 +107,8 @@ input {
   font-style: italic;
 }
 
-.text-rose {
-  color: var(--color-rose-pink);
+.text-gold {
+  color: var(--color-gold);
 }
 
 /* Subtle Image Filter */

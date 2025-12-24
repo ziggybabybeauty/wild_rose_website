@@ -70,7 +70,7 @@
 
 .title em {
   font-style: italic;
-  color: var(--color-rose-pink);
+  color: var(--color-gold);
 }
 
 .subtitle {
@@ -95,9 +95,9 @@
 }
 
 .ctaButton:hover {
-  background-color: var(--color-rose-pink);
-  border-color: var(--color-rose-pink);
-  color: var(--color-white);
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-charcoal);
 }
 
 @media (max-width: 768px) {

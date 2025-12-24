@@ -24,7 +24,7 @@
 
 .title em {
   font-style: italic;
-  color: var(--color-rose-pink);
+  color: var(--color-gold);
 }
 
 .teamGrid {
@@ -45,7 +45,7 @@
   overflow: hidden;
   border-radius: 50%;
   box-shadow:
-    0 0 0 2px rgba(231, 84, 128, 0.3),
+    0 0 0 2px rgba(184, 148, 95, 0.3),
     0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,7 +73,7 @@
   font-family: var(--font-serif);
   font-size: 1.75rem;
   font-weight: 600;
-  color: var(--color-rose-pink);
+  color: var(--color-gold);
   margin-bottom: var(--spacing-xs);
 }
 
@@ -81,7 +81,7 @@
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--color-rose-light);
+  color: var(--color-gold);
   letter-spacing: 0.15em;
   margin-bottom: var(--spacing-md);
   opacity: 0.8;

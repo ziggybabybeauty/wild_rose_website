@@ -55,7 +55,7 @@
 
 .title em {
   font-style: italic;
-  color: var(--color-rose-pink);
+  color: var(--color-gold);
 }
 
 .tagline {
@@ -91,14 +91,14 @@
 
 .input:focus {
   outline: none;
-  border-color: var(--color-rose-pink);
+  border-color: var(--color-gold);
 }
 
 .submitButton {
   align-self: flex-start;
-  background-color: var(--color-rose-pink);
-  color: var(--color-white);
-  border: 1px solid var(--color-rose-pink);
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-gold);
   padding: 0.75rem 2rem;
   font-family: var(--font-sans);
   font-size: 0.8rem;
@@ -109,8 +109,8 @@
 }
 
 .submitButton:hover:not(:disabled) {
-  background-color: var(--color-rose-dark);
-  border-color: var(--color-rose-dark);
+  background-color: var(--color-gold-dark);
+  border-color: var(--color-gold-dark);
   color: var(--color-white);
 }
 
@@ -122,9 +122,9 @@
 .successMessage {
   font-family: var(--font-sans);
   font-size: 1rem;
-  color: var(--color-rose-pink);
+  color: var(--color-gold);
   padding: var(--spacing-lg);
-  border: 1px solid var(--color-rose-pink);
+  border: 1px solid var(--color-gold);
   border-radius: 4px;
 }
 
