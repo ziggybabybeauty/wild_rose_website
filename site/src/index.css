@@ -6,7 +6,8 @@
   --color-grey-dark: #4A4A4A;
   --color-grey-medium: #6B7280;
   --color-grey-light: #E5E7EB;
-  --color-off-white: #F9FAFB;
+  --color-cream: #FAF8F3;
+  --color-cream-light: #FEFDFB;
   --color-white: #FFFFFF;
   --color-text-dark: #1A1A1A;
 
@@ -58,7 +59,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-text-dark);
-  background-color: var(--color-white);
+  background-color: var(--color-cream-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
