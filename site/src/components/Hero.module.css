@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: sepia(100%) hue-rotate(-30deg) saturate(0.6) brightness(0.7);
+  filter: saturate(0.85) brightness(0.75);
 }
 
 .overlay {
@@ -31,8 +31,8 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(95, 35, 40, 0.3) 0%,
-    rgba(95, 35, 40, 0.4) 100%
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.5) 100%
   );
   z-index: 2;
 }
@@ -63,14 +63,14 @@
   font-family: var(--font-serif);
   font-size: 3rem;
   font-weight: 600;
-  color: var(--color-cream);
+  color: var(--color-white);
   margin-bottom: var(--spacing-lg);
   line-height: 1.1;
 }
 
 .title em {
   font-style: italic;
-  color: var(--color-gold);
+  color: var(--color-rose-pink);
 }
 
 .subtitle {
@@ -84,8 +84,8 @@
 
 .ctaButton {
   background-color: transparent;
-  color: var(--color-cream);
-  border: 2px solid var(--color-cream);
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
   padding: 0.75rem 2.5rem;
   font-family: var(--font-sans);
   font-size: 0.875rem;
@@ -95,8 +95,9 @@
 }
 
 .ctaButton:hover {
-  background-color: var(--color-cream);
-  color: var(--color-burgundy-dark);
+  background-color: var(--color-rose-pink);
+  border-color: var(--color-rose-pink);
+  color: var(--color-white);
 }
 
 @media (max-width: 768px) {

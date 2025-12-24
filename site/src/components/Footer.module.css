@@ -1,10 +1,10 @@
 .footer {
-  background-color: var(--color-burgundy-dark);
+  background-color: var(--color-charcoal);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(232, 221, 208, 0.1);
+  border-top: 1px solid rgba(229, 231, 235, 0.1);
   scroll-snap-align: start;
 }
 
@@ -28,7 +28,7 @@
 .location {
   font-family: var(--font-sans);
   font-size: 0.75rem;
-  color: var(--color-gold);
+  color: var(--color-rose-pink);
   letter-spacing: 0.15em;
   margin-bottom: var(--spacing-sm);
 }
@@ -36,7 +36,7 @@
 .copyright {
   font-family: var(--font-sans);
   font-size: 0.7rem;
-  color: var(--color-cream);
+  color: var(--color-off-white);
   opacity: 0.6;
   letter-spacing: 0.1em;
 }

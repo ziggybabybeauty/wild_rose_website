@@ -1,15 +1,19 @@
 /* Design Tokens */
 :root {
-  /* Colors */
-  --color-burgundy-dark: #3D2428;
-  --color-burgundy: #4A2F36;
-  --color-burgundy-light: #5A3F46;
-  --color-gold: #B8945F;
-  --color-gold-light: #D4A853;
-  --color-cream: #E8DDD0;
-  --color-cream-light: #F5F0E8;
+  /* Greyscale Colors */
+  --color-black: #000000;
+  --color-charcoal: #1A1A1A;
+  --color-grey-dark: #4A4A4A;
+  --color-grey-medium: #6B7280;
+  --color-grey-light: #E5E7EB;
+  --color-off-white: #F9FAFB;
   --color-white: #FFFFFF;
-  --color-text-dark: #2D1F22;
+  --color-text-dark: #1A1A1A;
+
+  /* Wild Rose Pink Accent */
+  --color-rose-pink: #E75480;
+  --color-rose-light: #F990B0;
+  --color-rose-dark: #C73866;
 
   /* Typography */
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -103,11 +107,11 @@ input {
   font-style: italic;
 }
 
-.text-gold {
-  color: var(--color-gold);
+.text-rose {
+  color: var(--color-rose-pink);
 }
 
-/* Sepia/Duotone Filter for Images */
-.sepia-filter {
-  filter: sepia(100%) hue-rotate(-30deg) saturate(0.8) brightness(0.9);
+/* Subtle Image Filter */
+.image-filter {
+  filter: saturate(0.85) brightness(0.95);
 }

@@ -1,5 +1,5 @@
 .section {
-  background-color: var(--color-burgundy-dark);
+  background-color: var(--color-charcoal);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -17,14 +17,14 @@
   font-family: var(--font-serif);
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--color-cream);
+  color: var(--color-white);
   margin-bottom: var(--spacing-2xl);
   line-height: 1.2;
 }
 
 .title em {
   font-style: italic;
-  color: var(--color-gold);
+  color: var(--color-rose-pink);
 }
 
 .teamGrid {
@@ -45,7 +45,7 @@
   overflow: hidden;
   border-radius: 50%;
   box-shadow:
-    0 0 0 2px rgba(199, 168, 120, 0.3),
+    0 0 0 2px rgba(231, 84, 128, 0.3),
     0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
@@ -56,7 +56,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 40% 40%, transparent 40%, rgba(61, 36, 40, 0.4) 100%);
+  background: radial-gradient(circle at 40% 40%, transparent 40%, rgba(26, 26, 26, 0.4) 100%);
   pointer-events: none;
 }
 
@@ -73,7 +73,7 @@
   font-family: var(--font-serif);
   font-size: 1.75rem;
   font-weight: 600;
-  color: var(--color-gold);
+  color: var(--color-rose-pink);
   margin-bottom: var(--spacing-xs);
 }
 
@@ -81,7 +81,7 @@
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--color-gold);
+  color: var(--color-rose-light);
   letter-spacing: 0.15em;
   margin-bottom: var(--spacing-md);
   opacity: 0.8;
@@ -90,7 +90,7 @@
 .memberBio {
   font-family: var(--font-sans);
   font-size: 0.95rem;
-  color: var(--color-cream);
+  color: var(--color-off-white);
   line-height: 1.7;
   opacity: 0.85;
 }
