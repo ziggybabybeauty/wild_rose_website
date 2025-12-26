@@ -3,7 +3,7 @@ import propertyImage from '../assets/images/Calgary Neighbourhood.png';
 
 const Methodology = () => {
   return (
-    <section className={styles.section}>
+    <section id="methodology" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
           <h2 className={styles.title}>

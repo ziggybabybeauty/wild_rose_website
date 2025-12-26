@@ -5,12 +5,42 @@
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(184, 148, 95, 0.2) 30%,
+    rgba(184, 148, 95, 0.4) 50%,
+    rgba(184, 148, 95, 0.2) 70%,
+    transparent 100%
+  );
+  box-shadow: 0 0 16px rgba(184, 148, 95, 0.2);
 }
 
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .title {
@@ -25,6 +55,9 @@
 .title em {
   font-style: italic;
   color: var(--color-gold);
+  text-shadow:
+    0 0 20px rgba(184, 148, 95, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .teamGrid {
@@ -43,6 +76,26 @@
   padding: var(--spacing-lg);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all var(--transition-normal);
+  animation: fadeInUp 0.8s ease-out backwards;
+}
+
+.memberCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.memberCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .memberCard:hover {
@@ -60,15 +113,17 @@
   border-radius: 50%;
   box-shadow:
     0 0 0 2px rgba(184, 148, 95, 0.3),
-    0 8px 24px rgba(0, 0, 0, 0.3);
-  transition: all var(--transition-normal);
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(184, 148, 95, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .imageWrapper:hover {
   box-shadow:
-    0 0 0 2px rgba(184, 148, 95, 0.5),
-    0 12px 32px rgba(0, 0, 0, 0.4);
-  transform: scale(1.02);
+    0 0 0 3px rgba(184, 148, 95, 0.6),
+    0 16px 40px rgba(0, 0, 0, 0.45),
+    0 0 60px rgba(184, 148, 95, 0.25);
+  transform: scale(1.05) translateY(-4px);
 }
 
 .imageWrapper::after {

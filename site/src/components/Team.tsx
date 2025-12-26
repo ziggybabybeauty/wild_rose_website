@@ -26,7 +26,7 @@ const teamMembers: TeamMember[] = [
 
 const Team = () => {
   return (
-    <section className={styles.section}>
+    <section id="team" className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.title}>
           The <em>Expertise</em> Behind Your Investment.
