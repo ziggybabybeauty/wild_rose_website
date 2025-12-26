@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // For GitHub Pages deployment - update 'wild-rose-site' to your repo name
-  base: process.env.NODE_ENV === 'production' ? '/wild-rose-site/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/wild_rose_website/' : '/',
 })
