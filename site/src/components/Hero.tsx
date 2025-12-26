@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <div className={styles.backgroundImage}>
         <img src={heroImage} alt="Calgary skyline" />
       </div>

@@ -84,19 +84,56 @@
 
 .title {
   font-family: var(--font-serif);
-  font-size: 3rem;
+  font-size: 3.75rem;
   font-weight: 600;
   color: var(--color-white);
   margin-bottom: var(--spacing-lg);
   line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .title em {
+  position: relative;
   font-style: italic;
   color: var(--color-gold);
   text-shadow:
     0 0 20px rgba(184, 148, 95, 0.4),
     0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.title em::before,
+.title em::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold),
+    transparent
+  );
+  box-shadow: 0 0 8px rgba(184, 148, 95, 0.5);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.title em::before {
+  left: -10%;
+  width: 30%;
+}
+
+.title em::after {
+  right: -10%;
+  width: 30%;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .subtitle {
@@ -109,6 +146,7 @@
 }
 
 .ctaButton {
+  position: relative;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px) saturate(150%);
   -webkit-backdrop-filter: blur(12px) saturate(150%);
@@ -122,6 +160,26 @@
   letter-spacing: 0.1em;
   transition: all var(--transition-normal);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: buttonPulse 2s ease-in-out infinite;
+}
+
+.ctaButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(184, 148, 95, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ctaButton:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .ctaButton:hover {
@@ -132,6 +190,16 @@
   color: var(--color-charcoal);
   transform: scale(1.02);
   box-shadow: 0 0 20px rgba(184, 148, 95, 0.4), 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: none;
+}
+
+@keyframes buttonPulse {
+  0%, 100% {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(184, 148, 95, 0.3);
+  }
 }
 
 @media (max-width: 768px) {

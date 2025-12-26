@@ -41,11 +41,12 @@
 
 .title {
   font-family: var(--font-serif);
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--color-text-dark);
   margin-bottom: var(--spacing-lg);
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .title em {
