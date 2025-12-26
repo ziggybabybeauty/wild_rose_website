@@ -39,7 +39,8 @@
   padding: 0.75rem var(--container-padding);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
 
 .logo {
@@ -54,67 +55,8 @@
   filter: drop-shadow(0 2px 8px rgba(184, 148, 95, 0.3));
 }
 
-.links {
-  display: flex;
-  gap: var(--spacing-lg);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.links button {
-  background: transparent;
-  border: none;
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--color-cream);
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  transition: all var(--transition-normal);
-  border-radius: 4px;
-  position: relative;
-}
-
-.links button::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-gold),
-    transparent
-  );
-  transition: transform var(--transition-normal);
-  box-shadow: 0 0 8px rgba(184, 148, 95, 0.6);
-}
-
-.links button:hover {
-  color: var(--color-gold);
-  background: rgba(184, 148, 95, 0.1);
-}
-
-.links button:hover::after {
-  transform: translateX(-50%) scaleX(1);
-}
-
 @media (max-width: 768px) {
   .logo {
     height: 32px;
-  }
-
-  .links {
-    gap: var(--spacing-sm);
-  }
-
-  .links button {
-    font-size: 0.7rem;
-    padding: 0.4rem 0.75rem;
   }
 }

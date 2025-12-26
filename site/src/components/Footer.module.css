@@ -28,28 +28,10 @@
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: var(--spacing-2xl) var(--container-padding);
+  padding: 0 var(--container-padding);
   text-align: center;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(184, 148, 95, 0.15);
-  border-radius: 16px;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    inset 0 0 60px rgba(184, 148, 95, 0.05);
-  transition: all var(--transition-normal);
-}
-
-.container:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(184, 148, 95, 0.25);
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.35),
-    inset 0 0 80px rgba(184, 148, 95, 0.08);
-  transform: translateY(-4px);
 }
 
 .logo {

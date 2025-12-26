@@ -11,7 +11,7 @@ const Footer = () => {
           <img src={logo} alt="Wild Rose Corp" />
         </div>
 
-        <p className={styles.location}>WILD ROSE CORP | CALGARY, AB</p>
+        <p className={styles.location}>CALGARY, AB</p>
 
         <p className={styles.copyright}>
           &copy;{currentYear} WILD ROSE CORP.
