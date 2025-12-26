@@ -14,21 +14,22 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Formspree integration - To make this work:
-    // 1. Go to https://formspree.io and sign up (free)
-    // 2. Create a new form
-    // 3. Copy your form ID (looks like: xpznzxyz)
-    // 4. Replace YOUR_FORM_ID below with your actual form ID
+    // Web3Forms integration
+    const formDataToSend = new FormData();
+    formDataToSend.append('access_key', '722ee8e6-36cd-4d1e-a725-9ad226d53066');
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('subject', 'New Contact from Wild Rose Corp Website');
+
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        body: formDataToSend,
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '' });
       } else {
