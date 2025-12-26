@@ -1,5 +1,4 @@
 import Navigation from './components/Navigation';
-import ScrollIndicators from './components/ScrollIndicators';
 import Hero from './components/Hero';
 import Methodology from './components/Methodology';
 import Team from './components/Team';
@@ -10,7 +9,6 @@ function App() {
   return (
     <>
       <Navigation />
-      <ScrollIndicators />
       <main>
         <Hero />
         <Methodology />
