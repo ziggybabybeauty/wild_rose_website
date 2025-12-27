@@ -16,6 +16,12 @@
   pointer-events: all;
 }
 
+.nav.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
 .nav::before {
   content: '';
   position: absolute;

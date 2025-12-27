@@ -1,5 +1,5 @@
 import styles from './Methodology.module.css';
-import propertyImage from '../assets/images/Calgary Neighbourhood.png';
+import propertyImage from '../assets/images/Calgary_Neighbourhood.jpg';
 
 const Methodology = () => {
   return (

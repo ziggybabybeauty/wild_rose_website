@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import styles from './Contact.module.css';
-import buildingImage from '../assets/images/calgary-property-investing.png';
+import buildingImage from '../assets/images/calgary-property-investing.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -64,12 +64,20 @@ const Contact = () => {
           </p>
 
           {submitStatus === 'success' ? (
-            <div className={styles.successMessage}>
+            <div
+              className={styles.successMessage}
+              role="status"
+              aria-live="polite"
+            >
               Thank you for your interest! We'll be in touch soon.
             </div>
           ) : (
             <form onSubmit={handleSubmit} className={styles.form}>
+              <label htmlFor="contact-name" className={styles.visuallyHidden}>
+                Full Name
+              </label>
               <input
+                id="contact-name"
                 type="text"
                 name="name"
                 placeholder="Name"
@@ -79,9 +87,14 @@ const Contact = () => {
                 }
                 required
                 className={styles.input}
+                aria-required="true"
               />
 
+              <label htmlFor="contact-email" className={styles.visuallyHidden}>
+                Email Address
+              </label>
               <input
+                id="contact-email"
                 type="email"
                 name="email"
                 placeholder="Email"
@@ -91,6 +104,7 @@ const Contact = () => {
                 }
                 required
                 className={styles.input}
+                aria-required="true"
               />
 
               <button
@@ -102,7 +116,11 @@ const Contact = () => {
               </button>
 
               {submitStatus === 'error' && (
-                <p className={styles.errorMessage}>
+                <p
+                  className={styles.errorMessage}
+                  role="alert"
+                  aria-live="assertive"
+                >
                   Something went wrong. Please try again.
                 </p>
               )}

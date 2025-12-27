@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
 import logo from '../assets/logos/transparent_gold_logo.png';
-import heroImage from '../assets/images/header_image.png';
+import heroImage from '../assets/images/header_image.jpg';
 
 const Hero = () => {
   const scrollToContact = () => {
